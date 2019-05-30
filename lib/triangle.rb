@@ -22,6 +22,8 @@ class Triangle
       end
     end
     
+    if @a
+    
     if @a == @b && @b == @c
       return :equilateral
     elsif @a == @b || @b == @c || @a == @c
