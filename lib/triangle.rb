@@ -10,6 +10,14 @@ class Triangle
   
   def kind 
     
+    squared = []
+    squared << @a*@a 
+    squared << @b*@b 
+    squared << @c*@c 
+    squared = squared.sort
+    
+    if squared[2] + squared [1] != squared[0]
+    
     if @a < 0 || @b < 0 || @c < 0 
       begin 
         raise TriangleError
