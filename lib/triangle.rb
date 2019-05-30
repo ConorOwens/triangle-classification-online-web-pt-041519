@@ -16,8 +16,6 @@ class Triangle
     squared << @c*@c 
     squared = squared.sort
     
-    if squared[2] + squared [1] != squared[0]
-    
     if @a < 0 || @b < 0 || @c < 0 
       begin 
         raise TriangleError
@@ -30,7 +28,11 @@ class Triangle
       end
     end
     
-    if @a
+    if squared[0] + squared [1] != squared[2]
+      begin
+        raise TriangleError
+      end
+    end
     
     if @a == @b && @b == @c
       return :equilateral
