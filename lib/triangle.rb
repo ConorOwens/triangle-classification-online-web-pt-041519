@@ -12,13 +12,13 @@ class Triangle
     
     if @a < 0 || @b < 0 || @c < 0 
       begin 
-        raise TriangleError.negatives
+        raise TriangleError
       end
     end
     
     if @a == 0 || @b == 0 || @c == 0 
       begin 
-        raise TriangleError.no_length
+        raise TriangleError
       end
     end
     
@@ -32,15 +32,7 @@ class Triangle
   end
   
   class TriangleError < StandardError
-    
-    def negatives
-      puts "You can't have a negative value for side length!"
-    end
-    
-    def no_length
-      puts "All triangle sides MUST have a length!"
-    end
-    
+    #code?
   end
 
 end
