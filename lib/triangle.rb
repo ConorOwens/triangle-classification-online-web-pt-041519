@@ -7,9 +7,8 @@ class Triangle
   end
   
   class TriangleError < StandardError
-      def negatives
-        puts "You can't have a negative value for side length!"
-      end
+    def negatives
+      puts "You can't have a negative value for side length!"
     end
   end
 
