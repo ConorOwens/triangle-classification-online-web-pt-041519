@@ -7,9 +7,8 @@ class Triangle
   end
   
   class TriangleError < StandardError
-    if Triangle.a < 0 || @b < 0 || @c < 0
-      def message
-        #code
+      def negatives
+        puts "You can't have a negative value for side length!"
       end
     end
   end
