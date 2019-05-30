@@ -9,6 +9,9 @@ class Triangle
   end
   
   def kind 
+    if @a < 0 || @b < 0 || @c < 0 
+      begin 
+      
     if @a == @b && @b == @c
       return :equilateral
     elsif @a == @b || @b == @c || @a == @c
