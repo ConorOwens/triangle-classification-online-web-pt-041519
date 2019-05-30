@@ -28,12 +28,6 @@ class Triangle
       end
     end
     
-    if squared[0] + squared [1] != squared[2]
-      begin
-        raise TriangleError
-      end
-    end
-    
     if @a == @b && @b == @c
       return :equilateral
     elsif @a == @b || @b == @c || @a == @c
